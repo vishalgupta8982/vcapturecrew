@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Photograhy</title>
+    <script src="https://kit.fontawesome.com/d018dda636.js" crossorigin="anonymous"></script>
+</head>
+<style>
+
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+    
+    body { margin: 0; } 
+    div#slider { overflow: hidden; }
+    div#slider figure img { width: 20%; float: left; }
+    div#slider figure { 
+      position: relative;
+      width: 500%;
+
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 12s slidy infinite; 
+    }
+    figure{
+        align-items: center;
+        background-size: 150px;
+    }
+
+    .r{
+        background-color  :darksalmon;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-right: 500px;
+        margin-left:500px;
+        border-radius: 10px;
+        padding-top: 8px;
+    }
+    .p{
+       background-color:honeydew;
+       margin:0px;
+       padding:0px;
+       text-align: center;
+       border-color: black;
+       height: 50px;
+       margin-top: 70px;
+   }
+    
+    
+    .b{border-radius: 5px;
+margin-top:15px;
+margin-bottom:13px;
+margin-left: 10px;
+margin-right: 10px;
+padding-top:0px;
+font-size: larger;
+border: 3px solid black;
+padding: 10px;
+    }
+    .u{
+        background-color:burlywood;
+        margin-top:-10px;
+  margin-bottom: -40px;
+  text-align: center;
+  text-decoration-color: black;
+  padding-top: 8px;
+  border-radius:10px;
+  margin-left:500px;
+  margin-right:500px;
+ 
+    }
+
+    *{
+        box-sizing: border-box;
+        padding:0px;
+        margin:0px;
+    }
+    .container{
+        display:flex;
+        justify-content: center;
+    }
+    .photographer{
+        background-color:lightgreen;
+        width:300px;
+        height:600px;
+        margin:70px;
+        border-radius:5px  ; 
+        font-size: larger;
+        border:3px solid black;
+        padding: 20px;
+        
+     
+
+    }
+    .vig{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    .vig{
+        overflow-x: hidden;
+        min-height: 100vh;
+    }
+    .vig{
+        
+        position:relative;
+        justify-content:center;
+        align-items:center;
+        width: 100vw;
+        display: inline;
+        grid-template-columns:   repeat(auto fill,minmax(300px,300px));
+    }
+.vig img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+margin-top:    30px;
+margin-bottom: 30px;
+margin-left:   10px;
+margin-right:  10px;
+}
+.v{
+    background-color:aquamarine;
+    text-align: center;
+    text-decoration-color:black;
+ padding-top: 8px;
+ border-radius:10px;
+ margin-left:500px;
+ margin-right:500px;
+ margin-top:20px;
+ margin-bottom:-10px;
+ padding: 10px;
+}
+
+     
+     .vig{
+         margin:0;
+         padding: 0;
+         box-sizing: border-box;
+ 
+     }
+     .vig{
+         overflow-x: hidden;
+         min-height: 100vh;
+     }
+     .vig{
+         
+         position:relative;
+         justify-content:center;
+         align-items:center;
+         width: 100vw;
+         display: inline;
+         grid-template-columns: repeat(auto fill,minmax(300px,300px));
+     }
+ .vig img{
+     width: 300px;
+     height: 300px;
+     object-fit: cover;
+     object-position: center;
+ margin-top:    30px;
+ margin-bottom: 30px;
+ margin-left:   10px;
+ margin-right:  10px;
+ }
+ .v{background-color:aquamarine;
+     margin-top:10px;
+     margin-bottom: 10px;
+     text-align: center;
+     text-decoration-color: black;
+     padding-top: 8px;
+     border-radius:10px;
+     margin-left:500px;
+     margin-right:500px;
+ }
+ .menu-bar {
+   background-color: burlywood;
+   height: 80px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0.9%;
+   position: fixed;
+   margin-top: 0px;
+ 
+   
+ } 
+ a:hover{
+  background-color:aliceblue;
+  border-radius: 4cm;
+  border: black;
+  margin: 20px;
+  border: 20px;
+}
+ 
+
+ .menu-bar ul {
+   list-style: none;
+   display: flex;
+ }
+ 
+ .menu-bar ul li {
+    
+   padding: 10px 30px;
+   
+ 
+   position: relative;
+ }
+ 
+ .menu-bar ul li a {
+   font-size: 20px;
+   color: var(--color-white);
+   text-decoration: none;
+ 
+   transition: all 0.5s;
+ }
+ 
+ .menu-bar ul li a:hover {
+   color: var(--color-primary);
+ }
+ .fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+ 
+.dropdown-menu {
+  display: none;
+   
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color:  burlywood;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+.logo{
+    background:linear-gradient(to right,black,black,red,black,black);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;}
+ 
+header{    position: fixed; 
+    top: 0;
+  left: 0;
+  margin-right: 10px;
+  margin-top: 30px;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  
+   
+   }
+    
+   @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+.footer-distributed{
+	background: #444;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+}
+
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	 
+  background:linear-gradient(to right,black,black,red,black,black);
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip :text;
+	 
+}
+
+.footer-distributed h3 span{
+ 
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  black;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  black;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color:black;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+		background:rgba(0, 0, 0, 0.644);
+		background:rgba(0, 0, 0, 0.644);
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  white;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: black;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
+
+
+</style>
+<body>
+    <header> 
+        <div class="menu-bar">
+         
+          <h1 class="logo"><i class="fa-solid fa-camera-retro"></i> CAPTURE CREW</h1>
+          <ul>
+              
+            <li class="gupta"><a href=" index.html"  ><i class=" fa-solid fa-house"></i> Home</a></li>
+        
+            <li><a href="About.html"><i class="fa-solid fa-address-card"></i> About</a></li>
+            <li><a href="Reviews.html"><i class="fa-solid fa-message"></i> Reviews </i></a>
+              <li><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact us </i></a>
+                <li><a href=""style="background-color: white ; border-radius: 10px;">Menu <i class="fa-solid fa-caret-down"></i></i></a>
+                <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="nature.html" >Nature photography</a></li>
+                      <li><a href="sport.html"style="background-color: white ; border-radius: 10px;">Sport photography</a></li>
+                      <li><a href="food.html">food phototgraphy</a></li>
+                      <li><a href="sketching.html">sketching photography</a></li>
+                    </ul>
+                    </div>
+                  </div>
+                </li>
+          </ul>
+        </header>
+    <h1 class="p"><u> Sport Photography </u></h1>
+
+   
+    <div id="slider">
+    <figure>
+    <img src=" https://thumbs.dreamstime.com/b/young-man-table-tennis-player-isolated-96930865.jpg" alt="img1" height="450">
+    <img src=" https://thumbs.dreamstime.com/b/basketball-arena-37563445.jpg"alt="img2" height="450">
+    <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dm9sbGV5YmFsbHxlbnwwfHwwfHw%3D&w=1000&q=80" alt="img3" height="450"> 
+    <img src="  https://cdn.pixabay.com/photo/2014/07/04/19/15/man-384178__340.jpg" alt="img4" height="450">
+    <img src=" https://cdn.pixabay.com/photo/2016/11/29/03/17/action-1867014__340.jpg" alt="img5" height="450">
+    </figure>
+    </div>
+
+    <h2 class="r"><u>About Sport Photograhy</u></h2>
+    <box> <p class="b"><i>
+        Sports photography refers to the genre of photography that covers all types of sports.
+        In the majority of cases, professional sports photography is a branch of photojournalism,
+        while amateur sports photography, such as photos of children playing association football, 
+        is a branch of vernacular photography.Sports photographers can work as freelancers, taking 
+        pictures at sporting events and selling action shots to magazines, newspapers and sports 
+        enthusiasts. Some sports photographers work for sporting teams and organizations and take 
+        pictures that are mass-produced into commercial products.
+        The main application of professional sports photography is for editorial purposes,
+        dedicated sports photographers usually work for newspapers, major wire agencies or
+        dedicated sports magazines. However, sports photography is also used for advertising
+        purposes both to build a brand and as well as to promote a sport in a way that cannot
+        be accomplished by editorial means.ction and sports move quickly, and it can be 
+        difficult to keep up. Use your camera's continuous shooting mode (often called burst mode) 
+        to take 4 or 6 shots at a time, giving you a much better chance of capturing a good image.
+        Use burst mode to capture the definitive moment.</i>
+    </p>
+    </box>
+    <h2 class="v"><u> Sports Gallery</u></h2>
+    <div class="vig">
+        <img src=" https://thumbs.dreamstime.com/b/football-soccer-ball-kickoff-game-sunset-38302251.jpg">  
+        <img src="https://thumbs.dreamstime.com/b/cyclist-riding-mountain-bike-rocky-trail-sunset-extreme-sport-enduro-biking-concept-137747805.jpg"> 
+        <img src="https://thumbs.dreamstime.com/b/man-weight-training-equipment-sport-gym-22843139.jpg"> 
+        <img src="https://thumbs.dreamstime.com/b/sports-equipment-3181239.jpg"> 
+        
+        <img src="https://thumbs.dreamstime.com/b/cricket-oval-25811778.jpg"> 
+        <img src="https://thumbs.dreamstime.com/b/carrom-19448852.jpg"> 
+        <img src="https://thumbs.dreamstime.com/b/beachvolleyball-player-net-beachvolley-ball-jumps-tries-to-blocks-ball-54791303.jpg"> 
+        <img src="https://thumbs.dreamstime.com/b/basket-ball-hoop-5638256.jpg"> 
+        <img src="https://thumbs.dreamstime.com/b/basket-ball-board-under-blue-sky-white-clouds-thailand-38664900.jpg"> 
+        <img src="https://thumbs.dreamstime.com/b/cricket-player-batsman-silhouette-shadow-white-background-45042440.jpg"> 
+        <img src="https://thumbs.dreamstime.com/b/european-short-track-speed-skating-championship-15239084.jpg"> 
+        <img src="https://thumbs.dreamstime.com/b/strategy-chess-game-21851128.jpg"> 
+        <img src="https://thumbs.dreamstime.com/b/carrom-indoor-game-168144937.jpg"> 
+        <img src="https://thumbs.dreamstime.com/b/chess-law-11225172.jpg"> 
+        <img src="https://thumbs.dreamstime.com/b/kabaddi-action-scene-game-44061485.jpg"> 
+        <img src="https://thumbs.dreamstime.com/b/teenagers-playing-cricket-beach-21401762.jpg"> 
+        
+        
+                
+               </div></br>
+
+    <h2 class="u"><u> Reference Of Sport Photographers</u></h2>
+
+    <section class="container">
+        <div class="photographer">
+        <div class="img"></div>
+        <h2>One Click Photograhy</h2>
+        <p>Owner:Manish Jain is a one of the famous sport Photographer of Bhopal.
+        He had done his Photographer from one of the well recognized from Cambridge University.
+        as we already know there are many types of photography in sports.
+        Likewise, Cricket ,Volleyball, Badminton, Tennnis etc.Photographers capivate the
+        moments in camera.
+        <br>
+        For more details :
+        <br>
+        Contact Us: 9876534129
+        <br>
+        Location:Vaal Bihar Nagar Bhopal(M.P)
+        <br>
+        Time:7am to 7pm
+        
+        </p>
+        </div>
+
+
+        <div class="photographer">
+          <div class="img"></div>
+          <h2>  Vision Studio</h2>
+          <p> Owner:Mr.Saurya Pathak is also a famous photographer.
+            He is Gradute in photography since 1998 and working as 
+            a Photographer.He has given his opinion regarding photography
+            that its a lifetime capturing moments and a compatible non-existing process.
+            <br>
+            For more Information and booking
+            <br>
+            Contact Information: 9808567214
+            <br>
+            Email id:Sauryapathak123@gmail.com
+            <br>
+            Location:New Market Bhopal(M.P)
+            <br>
+            Time:9am to 5pm
+            
+          </p>
+        </div>
+
+        <div class="photographer">
+          <div class="img"></div>
+          <h2>Candid Photography</h2>
+          <p>Owner:Mr.Karan Mehra is also a well recognized photographer.
+            He is Gradute in photography since 1998 and working as 
+            a Photographer.He has given his opinion regarding photography
+            that its a lifetime capturing moments and a compatible non-existing process.
+            <br>
+            For more Information and booking
+            <br>
+            Contact Information: 9899778756
+            <br>
+            Email id:mehrakaran123@gmail.com
+            <br>
+            Location:Hoshangabad Road Bhopal(M.P)
+            <br>
+            Time:7am to 5pm
+          
+          </p>
+        </div>
+    </section>
+    <footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>CAPTURE <span>CREW</span></h3>
+
+				<p class="footer-links">
+					<a href=" index.html">Home</a>
+					·
+					<a href="about us .html">About</a>
+					·
+					<a href="review.html">Reviews</a>
+					·
+					 
+
+					<a href="contact.html">Contact</a>
+          .
+          <a href=" index.html">Menu</a>
+				</p>
+
+				<p class="footer-company-name">CAPTURE CREW © 2022</p>
+      </BR>
+      <p class="footer-company-name">CREATED BY- VISHAL GUPTA</p>
+				<div class="footer-icons">
+
+          <a href="https://www.instagram.com/____vishalgupta____/?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/in/vishal-gupta-b027b422a"><i class="fa fa-linkedin"></i></a>
+					<a href="https://github.com/vishalgupta8982"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p>Contact Us</p>
+
+        <form action="https://formspree.io/f/mjvlqggb" method="post">
+          <input type="text" name="name" placeholder="Name">
+					<input type="text" name="email" placeholder="Email">
+					<textarea name="message" placeholder="Message"></textarea>
+					<button>Send</button>
+
+				</form>
+
+			</div>
+
+		</footer>
+</body>
+</html>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

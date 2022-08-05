@@ -1,0 +1,694 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nature photography</title>
+  <script src="https://kit.fontawesome.com/d018dda636.js" crossorigin="anonymous"></script>
+  </head>
+  <style>
+    @keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+    
+    body { margin: 0; } 
+    div#slider { overflow: hidden; }
+    div#slider figure img { width: 20%; float: left; }
+    div#slider figure { 
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 12s slidy infinite;
+      
+    }
+    figure{
+        align-items: center;
+        background-size: 150px;
+    }
+
+    .m{
+        background-color  :darkseagreen;
+        margin:0px;
+        padding:0px;
+        text-align: center;
+        border-color: black;
+        height: 50px;
+        margin-top: 70px;
+    }
+    .all{border-radius: 5px;
+margin-top:15px;
+margin-bottom:13px;
+margin-left: 10px;
+margin-right: 10px;
+padding-top:0px;
+font-size: larger;
+border: 3px solid black;
+padding: 10px;
+       
+    }
+    
+    .k{
+      margin-top:-10px;
+ margin-bottom: -40px;
+        background-color:chartreuse;
+        text-align: center;
+        text-decoration-color: black;
+        padding-top: 8px;
+        border-radius:10px;
+        margin-left:500px;
+        margin-right:500px;
+    }
+    .n{
+        background-color  :mediumseagreen;
+        border-color: black;
+        text-align: center;
+        margin: bottom 19px;
+        margin-top: 19px;
+        margin-right: 500px;
+        margin-left:500px;
+        border-radius: 10px;
+        padding-top: 8px;
+          
+
+        
+
+        
+    }
+    
+    *{
+        box-sizing: border-box;
+        padding:0px;
+        margin:0px;
+    }
+    .container{
+        display:flex;
+        justify-content: center;
+    }
+    
+    
+    
+    
+    .photographer{
+        background-color:gold;
+        width:300px;
+     height:600px;
+     margin:70px;
+     border-radius:5px  ; 
+     font-size: larger;
+     border:3px solid black;
+     padding: 20px;
+
+
+    }
+     
+    .vig{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    .vig{
+        overflow-x: hidden;
+        min-height: 100vh;
+    }
+    .vig{
+        
+        position:relative;
+        justify-content:center;
+        align-items:center;
+        width: 100vw;
+        display: inline;
+        grid-template-columns: repeat(auto fill,minmax(300px,300px));
+    }
+.vig img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+margin-top:    30px;
+margin-bottom: 30px;
+margin-left:   10px;
+margin-right:  10px;
+}
+.v{
+    background-color:aquamarine;
+    text-decoration-color:black;
+    text-align: center;
+ padding-top: 8px;
+ border-radius:10px;
+ margin-left:500px;
+ margin-right:500px;
+ margin-top:20px;
+ margin-bottom:-10px;
+ padding: 10px; 
+}
+.menu-bar {
+  background-color: burlywood;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9%;
+  position: fixed;
+  margin-top: 0px;
+
+  
+} 
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+   
+  padding: 10px 30px;
+  
+
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+
+  transition: all 0.5s;
+}
+
+.menu-bar ul li a:hover {
+  color: var(--color-primary);
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+ 
+.dropdown-menu {
+  display: none;
+   
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color:  burlywood;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+a:hover{
+  background-color:aliceblue;
+  border-radius: 4cm;
+  border: black;
+  margin: 20px;
+  border: 20px;
+}
+ 
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+
+.hero {
+  height: calc(100vh - 80px);
+  background-image: url(./bg.jpg);
+  background-position: center;
+}
+ 
+.main{
+  position:absolute;
+  top:40%;
+  left:50%;
+  text-align: center;
+  transform:translate(-50%,50%);
+}
+.item{
+  text-align: center;
+}
+.vis{
+  position: relative;
+  top:-27px;
+  left:-120px;
+}
+input{
+  border:3px solid #4332e1;
+  height:40px;
+  width:300px;
+  border-radius:40px;
+  padding:0px,10px;
+}
+a:hover{
+  background-color:aliceblue;
+  border-radius: 4cm;
+  border: black;
+  margin: 20px;
+  border: 20px;
+}
+.logo{
+    background:linear-gradient(to right,black,black,red,black,black);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;}
+    header{
+     position: fixed; 
+   margin-right: 10px;
+   margin-top: -35px;
+  
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   z-index: 1000;
+   
+   }
+   
+   @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+.footer-distributed{
+	background: #444;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+}
+
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	 
+  background:linear-gradient(to right,black,black,red,black,black);
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip :text;
+	 
+}
+
+.footer-distributed h3 span{
+ 
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  black;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  black;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background:rgba(0, 0, 0, 0.644);
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color:black;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  white;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: black;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
+
+
+  </style>
+<body>
+  <header> 
+  <div class="menu-bar">
+   
+    <h1 class="logo"><i class="fa-solid fa-camera-retro"></i> CAPTURE CREW</h1>
+    <ul>
+        
+      <li class="gupta"><a href=" index.html"  ><i class=" fa-solid fa-house"></i> Home</a></li>
+  
+      <li><a href="about us .html"><i class="fa-solid fa-address-card"></i> About</a></li>
+      <li><a href="review.html"><i class="fa-solid fa-message"></i> Reviews </i></a>
+        <li><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact us </i></a>
+          <li><a href=""style="background-color: white ; border-radius: 10px;">Menu <i class="fa-solid fa-caret-down"></i></i></a>
+          <div class="dropdown-menu">
+              <ul>
+                <li><a href="nature.html"style="background-color: white ; border-radius: 10px;">Nature photography</a></li>
+                <li><a href="sport.html">Sport photography</a></li>
+                <li><a href="food.html">food phototgraphy</a></li>
+                <li><a href="sketching.html">sketching photography</a></li>
+              </ul>
+              </div>
+            </div>
+          </li>
+    </ul>
+  </header>
+     <h1 class="m"><u>Nature Photography</u></h1>
+   
+    <div id="slider">
+    <figure>
+     
+    
+    <img src="https://cdn.pixabay.com/photo/2016/10/22/17/46/mountains-1761292__340.jpg" alt="img1" height="450">
+    <img src=" https://cdn2.outdoorphotographer.com/2021/06/sunset-photographs-gary-hart-lake-wanaka.jpg"alt="img2" height="450">
+    <img src="https://i.pinimg.com/originals/45/b4/fb/45b4fb59fa21caa29d52e31eafa81b50.jpg" alt="img3" height="450"> 
+    <img src="https://www.hdwallback.net/wp-content/uploads/2018/01/Beautiful-Nature-Wallpapers-1920x1080.jpg" alt="img4" height="450">
+    <img src=" https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-118143566.jpg" alt="img5" height="450">
+   
+    </figure>
+    </div>
+     <h2 class="n"><u>About Nature Photography</u></h2>
+   <box> <p class="all">
+    <i>Nature photography is a wide range of photography taken outdoors and devoted to displaying natural elements such as landscapes, wildlife, plants, and close-ups of natural scenes and textures.
+        Nature photography tends to put a stronger emphasis on the aesthetic value of the photo than other photography genres,
+        such as photojournalism and documentary photography. 
+        Nature photography" overlaps the fields of—and is sometimes considered an overarching category including -- "wildlife photography," "landscape photography," and "garden photography"
+        Nature photographs are published in scientific, travel and cultural magazines such as National Geographic Magazine, National Wildlife Magazine and Audubon Magazine or other more specific magazines such as Outdoor Photographer and Nature's Best Photography. Well known nature photographers include Ansel Adams, Eliot Porter, Frans Lanting, Galen Rowell, and Art Wolfe.
+       Nature photography is a wide range of photography taken outdoors and devoted to displaying natural elements such as landscapes, wildlife, plants, and close-ups of natural scenes and textures. Nature photography tends to put a stronger emphasis on the aesthetic value of the photo than other photography genres, such as photojournalism and documentary photography. </i></p></box>
+       <h2 class="v"><u> Nature Gallery</u></h2>
+       <div class="vig">
+<img src="https://thumbs.dreamstime.com/b/hand-coin-tree-tree-grows-pile-saving-money-future-investment-ideas-business-growth-green-background-111124211.jpg">
+<img src="https://thumbs.dreamstime.com/b/zen-meditation-landscape-calm-spiritual-nature-environment-stone-balance-41286757.jpg">
+<img src=" https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171__340.jpg">
+<img src=" https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828__340.jpg">
+
+<img src="  https://wallup.net/wp-content/uploads/2019/09/1026042-beautiful-natural-river-sunset.jpg">
+<img src=" https://cdn.pixabay.com/photo/2017/04/09/09/56/avenue-2215317__340.jpg ">
+<img src=" https://cdn.pixabay.com/photo/2016/04/24/17/27/leaves-1350175__340.jpg">
+<img src="https://cdn.pixabay.com/photo/2013/11/28/10/03/river-219972__340.jpg ">
+<img src="https://cdn.pixabay.com/photo/2018/02/05/23/05/death-valley-3133502__340.jpg ">
+<img src="https://cdn.pixabay.com/photo/2017/12/03/22/11/winter-landscape-2995987__340.jpg ">
+<img src="https://cdn.pixabay.com/photo/2017/04/19/20/10/morning-2243465__340.jpg">
+<img src=" https://cdn.pixabay.com/photo/2016/03/27/22/22/fox-1284512__340.jpg">
+<img src="https://cdn.pixabay.com/photo/2013/10/09/02/27/lake-192990__340.jpg">
+<img src="https://cdn.pixabay.com/photo/2016/11/08/04/49/jungle-1807476__340.jpg">
+<img src="https://cdn.pixabay.com/photo/2017/09/11/15/58/sunset-2739472__340.jpg ">
+<img src=" https://cdn.pixabay.com/photo/2017/02/01/22/02/mountain-landscape-2031539__340.jpg">
+
+
+        
+       </div></br>
+
+      <h2 class="k"><u>References of Nature photographers</u></h2>
+      
+      <section class="container">
+        <div class="photographer">
+          <div class="img"></div>
+          <h2>Kapoor Click Photography</h2>
+          <p> Owner: Mr.Aman Kapoor is famous nature photographer in india.
+            He had done photography course from Delhi University.
+            He was working in nature-photography since 2020.
+            As per his concerns photography is non-existing thing around
+            this world we can caputre some moments in life long.
+            <br>
+            For more information and booking
+            <br>
+            Contact Information: 9930238723
+            <br>
+            Email id:kapooraman@gmail.com
+            <br>
+            Location:Near Green Valley Bhopal(M.P)
+            <br>
+            Time:8am to 10pm
+           </p>
+        </div>
+
+        <div class="photographer">
+          <div class="img"></div>
+          <h2>Glamour Studio</h2>
+          <p>Owner:Mr.Saurya Pathak is also a famous photographer.
+            He is Gradute in photography since 1998 and working as 
+            a Photographer.He has given his opinion regarding photography
+            that its a lifetime capturing moments and a compatible non-existing process.
+            <br>
+            For more Information and booking
+            <br>
+            Contact Information: 9808567214
+            <br>
+            Email id:Sauryapathak123@gmail.com
+            <br>
+            Location:New Market Bhopal(M.P)
+            <br>
+            Time:9am to 5pm
+          </p>
+        </div>
+
+        <div class="photographer">
+          <div class="img"></div>
+          <h2>Flashme Photography</h2>
+          <p>Owner:Mr.Piyush Jain is a well recognized Photographer in Indore.
+            He supports photography as pioneer work for him.
+            He had started photography since 1994 and still worked as photographer.
+            <br>
+            For more Information and booking
+            <br>
+            Contact Information: 8892348765
+            <br>
+            Email Id:flashme@gmail.com
+            <br>
+            Location:Arihant Vihar Mumbai(M.P)
+            <br>
+            Time:10am to 8pm
+          </p>
+        </div>
+
+      </section>
+        </div>
+      </div>
+      <footer class="footer-distributed">
+
+        <div class="footer-left">
+  
+          <h3>CAPTURE <span>CREW</span></h3>
+  
+          <p class="footer-links">
+            <a href=" index.html">Home</a>
+            ·
+            <a href="about us .html">About</a>
+            ·
+            <a href="review.html">Reviews</a>
+            ·
+             
+  
+            <a href="contact.html">Contact</a>
+            .
+            <a href=" index.html">Menu</a>
+          </p>
+  
+          <p class="footer-company-name">CAPTURE CREW © 2022</p>
+        </BR>
+        <p class="footer-company-name">CREATED BY- VISHAL GUPTA</p>
+          <div class="footer-icons">
+  
+            <a href="https://www.instagram.com/____vishalgupta____/?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/vishal-gupta-b027b422a"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/vishalgupta8982"><i class="fa fa-github"></i></a>
+  
+          </div>
+  
+        </div>
+  
+        <div class="footer-right">
+  
+          <p>Contact Us</p>
+  
+          <form action="https://formspree.io/f/mjvlqggb" method="post">
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="email" placeholder="Email">
+            <textarea name="message" placeholder="Message"></textarea>
+            <button>Send</button>
+  
+          </form>
+  
+        </div>
+  
+      </footer>
+</body>
+</html>

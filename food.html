@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food photography</title>
+    <script src="https://kit.fontawesome.com/d018dda636.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    .t{
+    background-color:goldenrod;
+    text-align: center;
+    margin:-8px;
+    padding:8px;
+}
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+    
+    body { margin: 0; } 
+    div#slider { overflow: hidden; }
+    div#slider figure img { width: 20%; float: left; }
+    div#slider figure { 
+      position: relative;
+      width: 500%;
+
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 8s slidy infinite; 
+    }
+    figure{
+        align-items: center;
+        background-size: 150px;
+    }
+    .y{
+        background-color :violet;
+        text-align: center;
+        text-decoration-color:black;
+        padding-top: 8px;
+        border-radius:10px;
+        margin-left:500px;
+        margin-right:500px;
+        margin-top:8px;
+        margin-bottom:-8px;
+        padding: 10px;
+    }
+    .t{
+     background-color:lightgreen;
+     margin:0px;
+     padding:0px;
+     text-align: center;
+     border-color: black;
+     height: 50px;
+     margin-top: 70px;
+ }
+.pmg{
+  width: 400px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+    .i{
+        background-color :mediumaquamarine;
+        border-radius: 5px;
+        margin-top:15px;
+        margin-bottom:-13px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top:0px;
+        font-size: larger;
+        border: 3px solid black;
+        padding: 20px;
+    }
+
+    .w{
+        background-color:lightskyblue;
+        text-align: center;
+        margin-top:-10px;
+ margin-bottom: -40px;
+        margin-right: 550px;
+        margin-left:550px;
+        border-radius:8px;
+        padding-top: 8px;  
+    }
+    *{
+        box-sizing: border-box;
+        padding:0px;
+        margin:0px;
+    }
+    .container{
+        display:flex;
+        justify-content: center;
+        margin-left: 30px;
+        
+    }
+    .photographer{
+        background-color:powderblue;
+        width:300px;
+     height:600px;
+     margin:70px;
+     border-radius:5px  ; 
+     font-size: larger;
+     border:3px solid black;
+     padding: 20px;
+
+
+    }
+    .vig{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    .vig{
+        overflow-x: hidden;
+        min-height: 100vh;
+    }
+    .vig{
+        
+        position:relative;
+        justify-content:center;
+        align-items:center;
+        width: 100vw;
+        display: inline;
+        grid-template-columns:   repeat(auto fill,minmax(300px,300px));
+    }
+.vig img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+margin-top:    30px;
+margin-bottom: 30px;
+margin-left:   10px;
+margin-right:  10px;
+}
+.v{
+    background-color:aquamarine; text-align: center;
+ text-decoration-color:black;
+ padding-top: 8px;
+ border-radius:10px;
+ margin-left:500px;
+ margin-right:500px;
+ margin-top:20px;
+ margin-bottom:-10px;
+ padding: 10px;
+}
+.menu-bar {
+   background-color: burlywood;
+   height: 80px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0.9%;
+   position: fixed;
+   margin-top: 0px;
+ 
+   
+ } 
+ 
+ .menu-bar ul {
+   list-style: none;
+   display: flex;
+ }
+ a:hover{
+  background-color:aliceblue;
+  border-radius: 4cm;
+  border: black;
+  margin: 20px;
+  border: 20px;
+}
+ 
+
+ .menu-bar ul li {
+    
+   padding: 10px 30px;
+   
+ 
+   position: relative;
+ }
+ 
+ .menu-bar ul li a {
+   font-size: 20px;
+   color: var(--color-white);
+   text-decoration: none;
+ 
+   transition: all 0.5s;
+ }
+ 
+ .menu-bar ul li a:hover {
+   color: var(--color-primary);
+ }
+ .fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+ 
+.dropdown-menu {
+  display: none;
+   
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color:  burlywood;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+.logo{
+    background:linear-gradient(to right,black,black,red,black,black);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+  }
+ 
+header{    position: fixed; 
+    top: 0;
+  left: 0;
+  margin-right: 10px;
+  margin-top: 30px;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  
+   
+   }
+
+   @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+.footer-distributed{
+	background: #444;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+}
+
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	 
+  background:linear-gradient(to right,black,black,red,black,black);
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip :text;
+	 
+}
+
+.footer-distributed h3 span{
+ 
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  black;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  black;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color:black;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color: black;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background:rgba(0, 0, 0, 0.644);
+	color: black;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
+
+
+</style>
+<body>
+    <header> 
+        <div class="menu-bar">
+         
+          <h1 class="logo"><i class="fa-solid fa-camera-retro"></i> CAPTURE CREW</h1>
+          <ul>
+              
+            <li class="gupta"><a href=" index.html"  ><i class=" fa-solid fa-house"></i> Home</a></li>
+        
+            <li><a href="about us .html"><i class="fa-solid fa-address-card"></i> About</a></li>
+            <li><a href="Review.html"><i class="fa-solid fa-message"></i> Reviews </i></a>
+              <li><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact us </i></a>
+                <li><a href=""style="background-color: white ; border-radius: 10px;">Menu <i class="fa-solid fa-caret-down"></i></i></a>
+                <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="nature.html" >Nature photography</a></li>
+                      <li><a href="sport.html">Sport photography</a></li>
+                      <li><a href="food.html"style="background-color: white ; border-radius: 10px;">food phototgraphy</a></li>
+                      <li><a href="sketching.html">sketching photography</a></li>
+                    </ul>
+                    </div>
+                  </div>
+                </li>
+          </ul>
+        </header>
+    <h1 class="t"><u>Food Photography</u></h1>
+
+    
+    <div id="slider">
+    <figure>
+    <img src="https://www.teenaagnel.com/wp-content/uploads/2019/12/food-photography-in-dubai.jpg" alt="img1" height="450">
+    <img src="https://static.toiimg.com/photo/52416693.cms"alt="img2" height="450">
+    <img src="https://www.chefspencil.com/wp-content/uploads/Idli.jpg" alt="img3" height="450"> 
+    <img src="https://deih43ym53wif.cloudfront.net/masala-dosa-shutterstock_785766178_c75e543a17.jpeg" alt="img4" height="450">
+    <img src="https://www.thephotoargus.com/wp-content/uploads/2021/04/food-photography-tips-for-toast_AFTER-1024x682.jpeg" alt="img5" height="450">
+    </figure>
+    </div>
+
+    <h2 class="y"><u>About Food Photography</u></h2>
+    <box> <p class="i">
+      <i> 
+     Food photography is a still life photography genre used to create attractive still life
+     photographs of food. It is a specialization of commercial photography, the products of 
+     which are used in advertisements, magazines, packaging, menus or cookbooks. Professional 
+     food photography is a collaborative effort, usually involving an art director, 
+     a photographer, a food stylist, a prop stylist and their assistants.First and foremost,
+     a good food photo should evoke the food's best traits and its inherent deliciousness.
+     The colors and textures of a dish should be celebrated, not muted or hidden. 
+     That means avoiding blurry snapshots, unappealing angles, and that all-too-common yellow 
+     cast at all costs.Composition is how all the elements that are used form the final product.
+     With a good composition in mind you're guiding the viewer's eye towards the most important 
+     subject of your photo. The most boring looking recipe can become a superb photo because of
+      great composition.</i>
+    </p></box>
+    <h2 class="v"><u> Food Gallery</u></h2>
+    <div class="vig">
+        <img src="https://cdn.pixabay.com/photo/2016/11/06/23/31/breakfast-1804457__340.jpg">  
+        <img src="https://cdn.pixabay.com/photo/2014/10/19/20/59/hamburger-494706__340.jpg"> 
+        <img src="https://cdn.pixabay.com/photo/2015/07/12/14/26/coffee-842020__340.jpg"> 
+        <img src="https://cdn.pixabay.com/photo/2017/02/15/10/57/pizza-2068272__340.jpg"> 
+        
+ <img src="https://cdn.pixabay.com/photo/2016/03/26/18/23/bread-1281053__340.jpg"> 
+ <img src="https://cdn.pixabay.com/photo/2017/01/30/13/49/pancakes-2020863__340.jpg"> 
+ <img src="https://cdn.pixabay.com/photo/2017/11/08/22/18/spaghetti-2931846__340.jpg"> 
+ <img src="https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908__340.jpg"> 
+ <img src="https://cdn.pixabay.com/photo/2015/04/10/00/41/food-715542__340.jpg"> 
+ <img src="https://media.istockphoto.com/photos/indian-hindu-veg-thali-food-platter-selective-focus-picture-id1158578874?k=20&m=1158578874&s=612x612&w=0&h=nsDq0x82Td02zHQKAOBB0pdY-kVzpN5P_qpXbUxsLB4="> 
+ <img src="https://media.istockphoto.com/photos/veg-kolhapuri-in-black-bowl-on-dark-slate-table-top-indian-vegetable-picture-id1278584350?k=20&m=1278584350&s=612x612&w=0&h=NGcWuspvJMpt2ovsNyBTHb9vL9ntkQNZfzMjdUjCYPc="> 
+ <img src="https://media.istockphoto.com/photos/indian-hindu-veg-thali-food-platter-selective-focus-picture-id1158623408?k=20&m=1158623408&s=612x612&w=0&h=TP2s0ZqNO39MQttEOjcT-9rXXfiHXZDcdgWz4ZdQvxE="> 
+ <img src="https://media.istockphoto.com/photos/indian-pulav-vegetable-rice-veg-biryani-basmati-rice-picture-id495185782?k=20&m=495185782&s=612x612&w=0&h=rUDIGAdGJFnjeqPLQBL9_tKFARMZN_A4EL91IRnJHAg="> 
+ <img src="https://media.istockphoto.com/photos/assorted-indian-foods-pav-bhajiveg-ball-manchurianmutter-paneer-malai-picture-id1292567163?k=20&m=1292567163&s=612x612&w=0&h=wTj4HsZUxUCwg9VaOtSZQy6CEofcExAEPEybkQMfXHU="> 
+ <img src="https://media.istockphoto.com/photos/veg-grilled-sandwich-picture-id1328011725?k=20&m=1328011725&s=612x612&w=0&h=UwuhfTdF5zfwPZ0xTlkI6adoynOUlzq3sdDf0QJP-7o="> 
+ <img src="https://media.istockphoto.com/photos/veg-biryani-or-veg-pulav-or-steamed-rice-picture-id905489044?k=20&m=905489044&s=612x612&w=0&h=MJiGJVcGa8-2HchzLpLukJcKhRQp7f9_eAJDun16WHU="> 
+        
+        
+                
+               </div></br>
+      
+
+    <h2 class="w"><u> Reference Of Food Photographers</u></h2>
+
+    <section class="container">
+        <div class="photographer">
+        <div class="pmg"></div>
+        <h2> Dheer Click Photography</h2>
+        <p><b>Owner:Dheeraj Sahu is a one of the famous sport Photographer of Bhopal.
+        He had done his Photographer from one of the well recognized from Cambridge University.
+        as we already know there are many types of photography in sports.
+        Likewise, Cricket ,Volleyball, Badminton, Tennnis etc.Photographers capivate the
+        moments in camera.
+        <br>
+        For more details :
+        <br>
+        Contact Us: 9876534129
+        <br>
+        Email-Id: dheer@768gmail.com
+        <br>
+        Location:Vaal Bihar Nagar Bhopal(M.P)
+        <br>
+        Time:7am to 11pm
+        </b>
+        </p>
+        </div>
+
+
+        <div class="photographer">
+          <div class="pmg"></div>
+          <h2>Sam Creation Photography</h2>
+          <p> <b>Owner:Mr.Rajat Sharma is also a famous photographer.
+            He is Gradute in photography since 1998 and working as 
+            a Photographer.He has given his opinion regarding photography
+            that its a lifetime capturing moments and a compatible non-existing process.
+            <br>
+            For more Information and booking
+            <br>
+            Contact Information: 9808567214
+            <br>
+            Email id:Rajatsharma123@gmail.com
+            <br>
+            Location:Vatika Nagar Bhopal(M.P)
+            <br>
+            Time:10am to 5pm
+            </b>
+          </p>
+        </div>
+
+        <div class="photographer">
+          <div class="pmg"></div>
+          <h2>Memorize click Photography</h2>
+          <p><b>Owner:Mr.Karan Mehra is also a well recognized photographer.
+            He is Gradute in photography since 1998 and working as 
+            a Photographer.He has given his opinion regarding photography
+            that its a lifetime capturing moments and a compatible non-existing process.
+            <br>
+            For more Information and booking
+            <br>
+            Contact Information: 9899778756
+            <br>
+            Email id:mehrakaran123@gmail.com
+            <br>
+            Location:Hoshangabad Road Bhopal(M.P)
+            <br>
+            Time:7am to 9pm
+          </b>
+          </p>
+        </div>
+    </section>a-instagram"></i></a></a>
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <h3>CAPTURE <span>CREW</span></h3>
+
+        <p class="footer-links">
+          <a href=" index.html">Home</a>
+          ·
+          <a href="about us .html">About</a>
+          ·
+          <a href="review.html">Reviews</a>
+          ·
+           
+
+          <a href="contact.html">Contact</a>
+          .
+          <a href=" index.html">Menu</a>
+        </p>
+
+        <p class="footer-company-name">CAPTURE CREW © 2022</p>
+      </BR>
+      <p class="footer-company-name">CREATED BY- VISHAL GUPTA</p>
+        <div class="footer-icons">
+
+          <a href="https://www.instagram.com/____vishalgupta____/?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/vishal-gupta-b027b422a"><i class="fa fa-linkedin"></i></a>
+          <a href="https://github.com/vishalgupta8982"><i class="fa fa-github"></i></a>
+
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p>Contact Us</p>
+
+        <form action="https://formspree.io/f/mjvlqggb" method="post">
+          <input type="text" name="name" placeholder="Name">
+          <input type="text" name="email" placeholder="Email">
+          <textarea name="message" placeholder="Message"></textarea>
+          <button>Send</button>
+
+        </form>
+
+      </div>
+
+    </footer>
+</body>
+</html>
